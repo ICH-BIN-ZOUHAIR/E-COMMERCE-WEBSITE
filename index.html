@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" sizes="32x32" type="image/png" href="./images/z.png ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dot.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/z.png">
+                    <h2>ZOUH<span>AIR</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                   <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="customers.html">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="order.html">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="analytics.html">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="messages.html">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">31</span>
+                </a>
+                <a href="product.html">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Dachboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="midlle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>23.366$</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>91%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!----------------END OF SALES--------->
+                <div class="expensise">
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <div class="midlle">
+                        <div class="left">
+                            <h3>Total Expensise</h3>
+                            <h1>11.325$</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>79%</p>
+                            </div>
+                        </div>
+                    </div>
+                     <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--------------END OF EXPENSISE--------------->
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="midlle">
+                        <div class="left">
+                            <h3>Total INCOM</h3>
+                            <h1>56.325$</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>54%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--------------END OF INCOM----------->
+            </div>
+            <!--------------------- END OF INSIGHTS ------------------>
+            <div class="recent-orders">
+                <h2>Recent Order</h2>
+                <!--------------------------- THE TABLE -------------------------->
+                        
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--
+                        <tr>
+                            <td>Nike Air Force 2 High</td>
+                            <td>125</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nike Air Force 2</td>
+                            <td>556</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nike Air Force 3</td>
+                            <td>369</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nike Air Force 3 High<span class="material-icons-sharp">production_quantity_limits</span></td>
+                            <td>3</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nike Air Force 1<span class="material-icons-sharp">production_quantity_limits</span></td>
+                            <td>5</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nike Air Max</td>
+                            <td>8800</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nike Air Zoom Pegasus </td>
+                            <td>6544</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nike Air Jordan 4</td>
+                            <td>194</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>-->
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!------------- END OF MAIN ------------->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>ZOUHAIR</p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/me.jpg">
+                    </div>
+                </div>
+            </div>
+            <!----- END OFTOP ----->
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="images/deutschland.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Samim Dautshland </b> Recived His Order Of Nike Air Jordan 4.</p>
+                            <small class="text-muted">10 Minutes Ago.</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="images/boy.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Ahmad Al Mansor </b> Recived His Order Of Nike Air Max.</p>
+                            <small class="text-muted">56 Minutes Ago.</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="images/girl.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Elizabeth Maqi </b> Recived His Order Of Nike Air Force 3 High.</p>
+                            <small class="text-muted">5 Hours Ago.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------ END OF RECENT UPDATES ----------------->
+            <div class="sales-analytics">
+                <h2>Sales analytics</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+36%</h5>
+                        <h3>1498</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>OFFLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="danger">-15%</h5>
+                        <h3>985</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>NEW CUSTOMERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+22%</h5>
+                        <h3>611</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div class="">
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Add Product</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./orders.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
